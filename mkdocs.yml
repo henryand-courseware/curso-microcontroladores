@@ -1,0 +1,42 @@
+site_name: "Course Name / Nombre del Curso"
+site_description: "Course notes and materials / Apuntes y material del curso"
+# IMPORTANT: update site_url in each course repo after publishing.
+# Example:
+# site_url: "https://henryand-courseware.github.io/curso-microprocesadores/"
+
+repo_url: "https://github.com/henryand-courseware/course-template-mkdocs"
+repo_name: "GitHub"
+edit_uri: "edit/main/docs/"
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - content.action.view
+
+nav:
+  - Home / Inicio: index.md
+  - Syllabus / Programa: syllabus.md
+  - Units / Unidades:
+      - Unit 1 / Unidad 1: units/unit-01.md
+      - Unit 2 / Unidad 2: units/unit-02.md
+  - Resources / Recursos: resources.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+
+extra:
+  generator: false
